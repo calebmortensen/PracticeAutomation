@@ -1,85 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-15T10:44:39 PST" name="Default suite" finished-at="2023-11-15T10:44:46 PST" duration-ms="7554">
+  <suite started-at="2023-11-15T11:38:23 PST" name="Default suite" finished-at="2023-11-15T11:38:23 PST" duration-ms="45">
     <groups>
     </groups>
-    <test started-at="2023-11-15T10:44:39 PST" name="Default test" finished-at="2023-11-15T10:44:46 PST" duration-ms="7554">
-      <class name="autoLessons.Launch">
-        <test-method signature="LaunchFacebook()[pri:0, instance:autoLessons.Launch@1817d444]" started-at="2023-11-15T10:44:39 PST" name="LaunchFacebook" finished-at="2023-11-15T10:44:46 PST" duration-ms="7520" status="FAIL">
-          <exception class="org.openqa.selenium.InvalidSelectorException">
-            <message>
-              <![CDATA[invalid selector: Unable to locate an element with the xpath expression (//div[@id='email_container']/div[last()] because of the following error:
-SyntaxError: Failed to execute 'evaluate' on 'Document': The string '(//div[@id='email_container']/div[last()]' is not a valid XPath expression.
-  (Session info: chrome=119.0.6045.123)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.2.0-36-generic', java.version: '20.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5af248538bfa6bf28ab78469ec4a35d1, findElement {using=xpath, value=(//div[@id='email_container']/div[last()]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.123, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:46139}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:46139/devtoo..., se:cdpVersion: 119.0.6045.123, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5af248538bfa6bf28ab78469ec4a35d1]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression (//div[@id='email_container']/div[last()] because of the following error:
-SyntaxError: Failed to execute 'evaluate' on 'Document': The string '(//div[@id='email_container']/div[last()]' is not a valid XPath expression.
-  (Session info: chrome=119.0.6045.123)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.2.0-36-generic', java.version: '20.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5af248538bfa6bf28ab78469ec4a35d1, findElement {using=xpath, value=(//div[@id='email_container']/div[last()]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.123, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:46139}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:46139/devtoo..., se:cdpVersion: 119.0.6045.123, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5af248538bfa6bf28ab78469ec4a35d1
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
-at autoLessons.Launch.LaunchFacebook(Launch.java:48)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
+    <test started-at="2023-11-15T11:38:23 PST" name="Default test" finished-at="2023-11-15T11:38:23 PST" duration-ms="45">
+      <class name="autoLessons.AnnotationsTest">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:autoLessons.AnnotationsTest@14dd9eb7]" started-at="2023-11-15T11:38:23 PST" name="beforeSuite" finished-at="2023-11-15T11:38:23 PST" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LaunchFacebook -->
-      </class> <!-- autoLessons.Launch -->
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:autoLessons.AnnotationsTest@14dd9eb7]" started-at="2023-11-15T11:38:23 PST" name="beforeTest" finished-at="2023-11-15T11:38:23 PST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:autoLessons.AnnotationsTest@14dd9eb7]" started-at="2023-11-15T11:38:23 PST" name="beforeClass" finished-at="2023-11-15T11:38:23 PST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:autoLessons.AnnotationsTest@14dd9eb7]" started-at="2023-11-15T11:38:23 PST" name="beforeMethod" finished-at="2023-11-15T11:38:23 PST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="f(java.lang.Integer,java.lang.String)[pri:0, instance:autoLessons.AnnotationsTest@14dd9eb7]" started-at="2023-11-15T11:38:23 PST" name="f" data-provider="dp" finished-at="2023-11-15T11:38:23 PST" duration-ms="8" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:autoLessons.AnnotationsTest@14dd9eb7]" started-at="2023-11-15T11:38:23 PST" name="afterMethod" finished-at="2023-11-15T11:38:23 PST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="f(java.lang.Integer,java.lang.String)[pri:0, instance:autoLessons.AnnotationsTest@14dd9eb7]" started-at="2023-11-15T11:38:23 PST" name="f" data-provider="dp" finished-at="2023-11-15T11:38:23 PST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:autoLessons.AnnotationsTest@14dd9eb7]" started-at="2023-11-15T11:38:23 PST" name="beforeMethod" finished-at="2023-11-15T11:38:23 PST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:autoLessons.AnnotationsTest@14dd9eb7]" started-at="2023-11-15T11:38:23 PST" name="afterMethod" finished-at="2023-11-15T11:38:23 PST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:autoLessons.AnnotationsTest@14dd9eb7]" started-at="2023-11-15T11:38:23 PST" name="afterClass" finished-at="2023-11-15T11:38:23 PST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:autoLessons.AnnotationsTest@14dd9eb7]" started-at="2023-11-15T11:38:23 PST" name="afterTest" finished-at="2023-11-15T11:38:23 PST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:autoLessons.AnnotationsTest@14dd9eb7]" started-at="2023-11-15T11:38:23 PST" name="afterSuite" finished-at="2023-11-15T11:38:23 PST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- autoLessons.AnnotationsTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
