@@ -10,7 +10,7 @@ import org.openqa.selenium.WebDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Launch {
-	SoftAssert softAssert = new SoftAssert(); //SoftAssertions continue and the softAssert.assertAll() at end of test case will compile all assertions
+  SoftAssert softAssert = new SoftAssert(); //SoftAssertions continue and the softAssert.assertAll() at end of test case will compile all assertions
 	
 	@Test
 	public void LaunchFacebook() throws Exception {
@@ -51,19 +51,4 @@ public class Launch {
 		driver.quit();
 		softAssert.assertAll(); //Throws Exception at END of test
 	}
-
-	/*
-	 * @Test public void LaunchGoogle() throws Exception {
-	 * WebDriverManager.chromedriver().setup(); WebDriver driver = new
-	 * ChromeDriver(); driver.manage().window().maximize();
-	 * driver.get("https://www.google.com/");
-	 * driver.findElement(By.name("q")).sendKeys("HYR Tutorials", Keys.ENTER);
-	 * String expectedTitle = "HYR Tutorials - Google Search"; String actualTitle =
-	 * driver.getTitle(); assertEquals(actualTitle, expectedTitle,
-	 * "Title is mismatched"); // only displays message if FAIL Thread.sleep(5000);
-	 * driver.quit();
-	 * 
-	 * }
-	 */
-	// /html/body/div[1]/div[1]/div[1]/div/div[2]/div[2]/form/div/div[1]/div[2]
 }

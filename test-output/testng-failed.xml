@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="autoLessons.Launch">
+      <class name="autoLessons.DP_Test">
         <methods>
-          <include name="LaunchFacebook"/>
+          <include name="LoginTest"/>
         </methods>
-      </class> <!-- autoLessons.Launch -->
+      </class> <!-- autoLessons.DP_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
