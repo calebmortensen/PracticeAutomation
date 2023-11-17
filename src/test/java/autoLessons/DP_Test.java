@@ -44,12 +44,6 @@ public class DP_Test {
 			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@type='submit']")));
 			element.click();
 			element = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h6[normalize-space()='Dashboard']")));
-			//String expectedTimeAtWork = "Time at Work";
-			//String actualTimeAtWork = driver.findElement(By.xpath("//p[normalize-space()='Time at Work']")).getAttribute("value");
-			//Assert.assertEquals(actualTimeAtWork, expectedTimeAtWork);
-			//softAssert.assertTrue(driver.findElement(By.xpath("//h6[normalize-space()='Dashboard']")).isDisplayed());
-			//Thread.sleep(3000);
-			//String actualTitle = driver.getTitle();
 			driver.quit();
 			//softAssert.assertAll(); 
 			
