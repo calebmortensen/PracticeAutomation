@@ -25,7 +25,7 @@ public class DP_Test {
 	//public static boolean checked;
 	public static SoftAssert softAssert;
 		
-  @Test(dataProvider = "loginTestData") //can use method name if dataprovider isn't given a name
+  @Test(dataProvider = "loginData", dataProviderClass = autoLessons.ExcelDataSupplier.class) //can use method name if dataprovider isn't given a name
   public void LoginTest(String userName, String password) throws Exception{	
 	  
 			WebDriverManager.chromedriver().setup();
