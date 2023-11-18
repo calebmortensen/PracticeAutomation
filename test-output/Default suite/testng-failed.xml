@@ -5,7 +5,7 @@
     <classes>
       <class name="autoLessons.DP_Test">
         <methods>
-          <include name="LoginTest" invocation-numbers="1 2"/>
+          <include name="LoginTest" invocation-numbers="0"/>
         </methods>
       </class> <!-- autoLessons.DP_Test -->
     </classes>
