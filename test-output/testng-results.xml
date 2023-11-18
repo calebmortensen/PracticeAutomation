@@ -1,87 +1,125 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="24" passed="24" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-18T08:38:57 PST" name="Default suite" finished-at="2023-11-18T08:39:07 PST" duration-ms="10555">
+  <suite started-at="2023-11-18T10:01:21 PST" name="Suite" finished-at="2023-11-18T10:01:21 PST" duration-ms="160">
     <groups>
     </groups>
-    <test started-at="2023-11-18T08:38:57 PST" name="Default test" finished-at="2023-11-18T08:39:07 PST" duration-ms="10555">
-      <class name="autoLessons.DP_Test">
-        <test-method signature="LoginTest(java.lang.String,java.lang.String)[pri:0, instance:autoLessons.DP_Test@61df66b6]" started-at="2023-11-18T08:38:57 PST" name="LoginTest" data-provider="loginTestData" finished-at="2023-11-18T08:39:07 PST" duration-ms="10505" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin123]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#abcd"}
-  (Session info: chrome=119.0.6045.123)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.2.0-36-generic', java.version: '20.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [effe70a0a5c1240df5087eeaa01d2576, findChildElement {id=CEC3C7D8485F84A7944BF0BABF3E1BBB_element_28, using=id, value=abcd}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.123, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:42423}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:42423/devtoo..., se:cdpVersion: 119.0.6045.123, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: effe70a0a5c1240df5087eeaa01d2576]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#abcd"}
-  (Session info: chrome=119.0.6045.123)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.2.0-36-generic', java.version: '20.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [effe70a0a5c1240df5087eeaa01d2576, findChildElement {id=CEC3C7D8485F84A7944BF0BABF3E1BBB_element_28, using=id, value=abcd}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.123, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:42423}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:42423/devtoo..., se:cdpVersion: 119.0.6045.123, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: effe70a0a5c1240df5087eeaa01d2576
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
-at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:212)
-at autoLessons.DP_Test.LoginTest(DP_Test.java:52)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:47)
-at org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:76)
-at org.testng.internal.invokers.InvokeMethodRunnable.run(InvokeMethodRunnable.java:33)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeWithTimeoutWithNoExecutor(MethodInvocationHelper.java:345)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:301)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:80)
-at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:17)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1623)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+    <test started-at="2023-11-18T10:01:21 PST" name="All" finished-at="2023-11-18T10:01:21 PST" duration-ms="63">
+      <class name="autoLessons.ParallelTest3">
+        <test-method signature="testMethod9()[pri:0, instance:autoLessons.ParallelTest3@647e447]" started-at="2023-11-18T10:01:21 PST" name="testMethod9" finished-at="2023-11-18T10:01:21 PST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LoginTest -->
-      </class> <!-- autoLessons.DP_Test -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- testMethod9 -->
+        <test-method signature="testMethod99()[pri:0, instance:autoLessons.ParallelTest3@647e447]" started-at="2023-11-18T10:01:21 PST" name="testMethod99" finished-at="2023-11-18T10:01:21 PST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod99 -->
+        <test-method signature="testMethod999()[pri:0, instance:autoLessons.ParallelTest3@647e447]" started-at="2023-11-18T10:01:21 PST" name="testMethod999" finished-at="2023-11-18T10:01:21 PST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod999 -->
+        <test-method signature="testMethod9999()[pri:0, instance:autoLessons.ParallelTest3@647e447]" started-at="2023-11-18T10:01:21 PST" name="testMethod9999" finished-at="2023-11-18T10:01:21 PST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod9999 -->
+      </class> <!-- autoLessons.ParallelTest3 -->
+      <class name="autoLessons.ParallelTest">
+        <test-method signature="testMethod1()[pri:0, instance:autoLessons.ParallelTest@39529185]" started-at="2023-11-18T10:01:21 PST" name="testMethod1" finished-at="2023-11-18T10:01:21 PST" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod1 -->
+        <test-method signature="testMethod2()[pri:0, instance:autoLessons.ParallelTest@39529185]" started-at="2023-11-18T10:01:21 PST" name="testMethod2" finished-at="2023-11-18T10:01:21 PST" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod2 -->
+        <test-method signature="testMethod3()[pri:0, instance:autoLessons.ParallelTest@39529185]" started-at="2023-11-18T10:01:21 PST" name="testMethod3" finished-at="2023-11-18T10:01:21 PST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod3 -->
+        <test-method signature="testMethod4()[pri:0, instance:autoLessons.ParallelTest@39529185]" started-at="2023-11-18T10:01:21 PST" name="testMethod4" finished-at="2023-11-18T10:01:21 PST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod4 -->
+      </class> <!-- autoLessons.ParallelTest -->
+      <class name="autoLessons.ParallelTest2">
+        <test-method signature="testMethod5()[pri:0, instance:autoLessons.ParallelTest2@3427b02d]" started-at="2023-11-18T10:01:21 PST" name="testMethod5" finished-at="2023-11-18T10:01:21 PST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod5 -->
+        <test-method signature="testMethod6()[pri:0, instance:autoLessons.ParallelTest2@3427b02d]" started-at="2023-11-18T10:01:21 PST" name="testMethod6" finished-at="2023-11-18T10:01:21 PST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod6 -->
+        <test-method signature="testMethod7()[pri:0, instance:autoLessons.ParallelTest2@3427b02d]" started-at="2023-11-18T10:01:21 PST" name="testMethod7" finished-at="2023-11-18T10:01:21 PST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod7 -->
+        <test-method signature="testMethod8()[pri:0, instance:autoLessons.ParallelTest2@3427b02d]" started-at="2023-11-18T10:01:21 PST" name="testMethod8" finished-at="2023-11-18T10:01:21 PST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod8 -->
+      </class> <!-- autoLessons.ParallelTest2 -->
+    </test> <!-- All -->
+    <test started-at="2023-11-18T10:01:21 PST" name="ParallelTest" finished-at="2023-11-18T10:01:21 PST" duration-ms="10">
+      <class name="autoLessons.ParallelTest">
+        <test-method signature="testMethod2()[pri:0, instance:autoLessons.ParallelTest@3e58a80e]" started-at="2023-11-18T10:01:21 PST" name="testMethod2" finished-at="2023-11-18T10:01:21 PST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod2 -->
+        <test-method signature="testMethod1()[pri:0, instance:autoLessons.ParallelTest@3e58a80e]" started-at="2023-11-18T10:01:21 PST" name="testMethod1" finished-at="2023-11-18T10:01:21 PST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod1 -->
+        <test-method signature="testMethod3()[pri:0, instance:autoLessons.ParallelTest@3e58a80e]" started-at="2023-11-18T10:01:21 PST" name="testMethod3" finished-at="2023-11-18T10:01:21 PST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod3 -->
+        <test-method signature="testMethod4()[pri:0, instance:autoLessons.ParallelTest@3e58a80e]" started-at="2023-11-18T10:01:21 PST" name="testMethod4" finished-at="2023-11-18T10:01:21 PST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod4 -->
+      </class> <!-- autoLessons.ParallelTest -->
+    </test> <!-- ParallelTest -->
+    <test started-at="2023-11-18T10:01:21 PST" name="ParallelTest2" finished-at="2023-11-18T10:01:21 PST" duration-ms="9">
+      <class name="autoLessons.ParallelTest2">
+        <test-method signature="testMethod5()[pri:0, instance:autoLessons.ParallelTest2@4fb0f2b9]" started-at="2023-11-18T10:01:21 PST" name="testMethod5" finished-at="2023-11-18T10:01:21 PST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod5 -->
+        <test-method signature="testMethod6()[pri:0, instance:autoLessons.ParallelTest2@4fb0f2b9]" started-at="2023-11-18T10:01:21 PST" name="testMethod6" finished-at="2023-11-18T10:01:21 PST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod6 -->
+        <test-method signature="testMethod7()[pri:0, instance:autoLessons.ParallelTest2@4fb0f2b9]" started-at="2023-11-18T10:01:21 PST" name="testMethod7" finished-at="2023-11-18T10:01:21 PST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod7 -->
+        <test-method signature="testMethod8()[pri:0, instance:autoLessons.ParallelTest2@4fb0f2b9]" started-at="2023-11-18T10:01:21 PST" name="testMethod8" finished-at="2023-11-18T10:01:21 PST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod8 -->
+      </class> <!-- autoLessons.ParallelTest2 -->
+    </test> <!-- ParallelTest2 -->
+    <test started-at="2023-11-18T10:01:21 PST" name="ParallelTest3" finished-at="2023-11-18T10:01:21 PST" duration-ms="8">
+      <class name="autoLessons.ParallelTest3">
+        <test-method signature="testMethod99()[pri:0, instance:autoLessons.ParallelTest3@4cc451f2]" started-at="2023-11-18T10:01:21 PST" name="testMethod99" finished-at="2023-11-18T10:01:21 PST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod99 -->
+        <test-method signature="testMethod9()[pri:0, instance:autoLessons.ParallelTest3@4cc451f2]" started-at="2023-11-18T10:01:21 PST" name="testMethod9" finished-at="2023-11-18T10:01:21 PST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod9 -->
+        <test-method signature="testMethod999()[pri:0, instance:autoLessons.ParallelTest3@4cc451f2]" started-at="2023-11-18T10:01:21 PST" name="testMethod999" finished-at="2023-11-18T10:01:21 PST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod999 -->
+        <test-method signature="testMethod9999()[pri:0, instance:autoLessons.ParallelTest3@4cc451f2]" started-at="2023-11-18T10:01:21 PST" name="testMethod9999" finished-at="2023-11-18T10:01:21 PST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod9999 -->
+      </class> <!-- autoLessons.ParallelTest3 -->
+    </test> <!-- ParallelTest3 -->
+  </suite> <!-- Suite -->
 </testng-results>
