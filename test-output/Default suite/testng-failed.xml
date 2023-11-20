@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="listeners.TestClass">
+      <class name="autoLessons.DP_Test">
         <methods>
-          <include name="testMethod4"/>
-          <include name="testMethod2"/>
-          <include name="testMethod3"/>
+          <include name="LoginTest" invocation-numbers="0"/>
         </methods>
-      </class> <!-- listeners.TestClass -->
+      </class> <!-- autoLessons.DP_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
