@@ -1,125 +1,121 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="24" passed="24" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="1" failed="2" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-18T10:01:21 PST" name="Suite" finished-at="2023-11-18T10:01:21 PST" duration-ms="160">
+  <suite started-at="2023-11-20T10:44:23 PST" name="Suite" finished-at="2023-11-20T10:44:24 PST" duration-ms="1140">
     <groups>
     </groups>
-    <test started-at="2023-11-18T10:01:21 PST" name="All" finished-at="2023-11-18T10:01:21 PST" duration-ms="63">
-      <class name="autoLessons.ParallelTest3">
-        <test-method signature="testMethod9()[pri:0, instance:autoLessons.ParallelTest3@647e447]" started-at="2023-11-18T10:01:21 PST" name="testMethod9" finished-at="2023-11-18T10:01:21 PST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMethod9 -->
-        <test-method signature="testMethod99()[pri:0, instance:autoLessons.ParallelTest3@647e447]" started-at="2023-11-18T10:01:21 PST" name="testMethod99" finished-at="2023-11-18T10:01:21 PST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMethod99 -->
-        <test-method signature="testMethod999()[pri:0, instance:autoLessons.ParallelTest3@647e447]" started-at="2023-11-18T10:01:21 PST" name="testMethod999" finished-at="2023-11-18T10:01:21 PST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMethod999 -->
-        <test-method signature="testMethod9999()[pri:0, instance:autoLessons.ParallelTest3@647e447]" started-at="2023-11-18T10:01:21 PST" name="testMethod9999" finished-at="2023-11-18T10:01:21 PST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMethod9999 -->
-      </class> <!-- autoLessons.ParallelTest3 -->
-      <class name="autoLessons.ParallelTest">
-        <test-method signature="testMethod1()[pri:0, instance:autoLessons.ParallelTest@39529185]" started-at="2023-11-18T10:01:21 PST" name="testMethod1" finished-at="2023-11-18T10:01:21 PST" duration-ms="11" status="PASS">
+    <test started-at="2023-11-20T10:44:23 PST" name="Test1" finished-at="2023-11-20T10:44:23 PST" duration-ms="55">
+      <class name="listeners.TestClass">
+        <test-method signature="testMethod1()[pri:0, instance:listeners.TestClass@72f926e6]" started-at="2023-11-20T10:44:23 PST" name="testMethod1" finished-at="2023-11-20T10:44:23 PST" duration-ms="12" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMethod1 -->
-        <test-method signature="testMethod2()[pri:0, instance:autoLessons.ParallelTest@39529185]" started-at="2023-11-18T10:01:21 PST" name="testMethod2" finished-at="2023-11-18T10:01:21 PST" duration-ms="11" status="PASS">
+        <test-method signature="testMethod2()[pri:0, instance:listeners.TestClass@72f926e6]" started-at="2023-11-20T10:44:23 PST" name="testMethod2" finished-at="2023-11-20T10:44:23 PST" duration-ms="2" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 
+at org.testng.AssertJUnit.fail(AssertJUnit.java:65)
+at org.testng.AssertJUnit.assertTrue(AssertJUnit.java:23)
+at org.testng.AssertJUnit.assertTrue(AssertJUnit.java:33)
+at listeners.TestClass.testMethod2(TestClass.java:23)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMethod2 -->
-        <test-method signature="testMethod3()[pri:0, instance:autoLessons.ParallelTest@39529185]" started-at="2023-11-18T10:01:21 PST" name="testMethod3" finished-at="2023-11-18T10:01:21 PST" duration-ms="2" status="PASS">
+      </class> <!-- listeners.TestClass -->
+    </test> <!-- Test1 -->
+    <test started-at="2023-11-20T10:44:23 PST" name="Test2" finished-at="2023-11-20T10:44:24 PST" duration-ms="1021">
+      <class name="listeners.TestClass">
+        <test-method signature="testMethod3()[pri:0, instance:listeners.TestClass@9f116cc]" started-at="2023-11-20T10:44:23 PST" name="testMethod3" finished-at="2023-11-20T10:44:24 PST" duration-ms="1006" status="FAIL">
+          <exception class="org.testng.internal.thread.ThreadTimeoutException">
+            <message>
+              <![CDATA[Method listeners.TestClass.testMethod3() didn't finish within the time-out 1000]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.thread.ThreadTimeoutException: Method listeners.TestClass.testMethod3() didn't finish within the time-out 1000
+at java.base/java.lang.Thread.sleep0(Native Method)
+at java.base/java.lang.Thread.sleep(Thread.java:484)
+at listeners.TestClass.testMethod3(TestClass.java:28)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:47)
+at org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:76)
+at org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:11)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1623)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.thread.ThreadTimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMethod3 -->
-        <test-method signature="testMethod4()[pri:0, instance:autoLessons.ParallelTest@39529185]" started-at="2023-11-18T10:01:21 PST" name="testMethod4" finished-at="2023-11-18T10:01:21 PST" duration-ms="3" status="PASS">
+        <test-method signature="testMethod4()[pri:0, instance:listeners.TestClass@9f116cc]" started-at="2023-11-20T10:44:24 PST" name="testMethod4" finished-at="2023-11-20T10:44:24 PST" depends-on-methods="listeners.TestClass.testMethod3" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method listeners.TestClass.testMethod4() on instance listeners.TestClass@9f116cc depends on not successfully finished methods 
+[listeners.TestClass.testMethod3() on instance listeners.TestClass@9f116cc]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method listeners.TestClass.testMethod4() on instance listeners.TestClass@9f116cc depends on not successfully finished methods 
+[listeners.TestClass.testMethod3() on instance listeners.TestClass@9f116cc]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMethod4 -->
-      </class> <!-- autoLessons.ParallelTest -->
-      <class name="autoLessons.ParallelTest2">
-        <test-method signature="testMethod5()[pri:0, instance:autoLessons.ParallelTest2@3427b02d]" started-at="2023-11-18T10:01:21 PST" name="testMethod5" finished-at="2023-11-18T10:01:21 PST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMethod5 -->
-        <test-method signature="testMethod6()[pri:0, instance:autoLessons.ParallelTest2@3427b02d]" started-at="2023-11-18T10:01:21 PST" name="testMethod6" finished-at="2023-11-18T10:01:21 PST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMethod6 -->
-        <test-method signature="testMethod7()[pri:0, instance:autoLessons.ParallelTest2@3427b02d]" started-at="2023-11-18T10:01:21 PST" name="testMethod7" finished-at="2023-11-18T10:01:21 PST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMethod7 -->
-        <test-method signature="testMethod8()[pri:0, instance:autoLessons.ParallelTest2@3427b02d]" started-at="2023-11-18T10:01:21 PST" name="testMethod8" finished-at="2023-11-18T10:01:21 PST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMethod8 -->
-      </class> <!-- autoLessons.ParallelTest2 -->
-    </test> <!-- All -->
-    <test started-at="2023-11-18T10:01:21 PST" name="ParallelTest" finished-at="2023-11-18T10:01:21 PST" duration-ms="10">
-      <class name="autoLessons.ParallelTest">
-        <test-method signature="testMethod2()[pri:0, instance:autoLessons.ParallelTest@3e58a80e]" started-at="2023-11-18T10:01:21 PST" name="testMethod2" finished-at="2023-11-18T10:01:21 PST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMethod2 -->
-        <test-method signature="testMethod1()[pri:0, instance:autoLessons.ParallelTest@3e58a80e]" started-at="2023-11-18T10:01:21 PST" name="testMethod1" finished-at="2023-11-18T10:01:21 PST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMethod1 -->
-        <test-method signature="testMethod3()[pri:0, instance:autoLessons.ParallelTest@3e58a80e]" started-at="2023-11-18T10:01:21 PST" name="testMethod3" finished-at="2023-11-18T10:01:21 PST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMethod3 -->
-        <test-method signature="testMethod4()[pri:0, instance:autoLessons.ParallelTest@3e58a80e]" started-at="2023-11-18T10:01:21 PST" name="testMethod4" finished-at="2023-11-18T10:01:21 PST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMethod4 -->
-      </class> <!-- autoLessons.ParallelTest -->
-    </test> <!-- ParallelTest -->
-    <test started-at="2023-11-18T10:01:21 PST" name="ParallelTest2" finished-at="2023-11-18T10:01:21 PST" duration-ms="9">
-      <class name="autoLessons.ParallelTest2">
-        <test-method signature="testMethod5()[pri:0, instance:autoLessons.ParallelTest2@4fb0f2b9]" started-at="2023-11-18T10:01:21 PST" name="testMethod5" finished-at="2023-11-18T10:01:21 PST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMethod5 -->
-        <test-method signature="testMethod6()[pri:0, instance:autoLessons.ParallelTest2@4fb0f2b9]" started-at="2023-11-18T10:01:21 PST" name="testMethod6" finished-at="2023-11-18T10:01:21 PST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMethod6 -->
-        <test-method signature="testMethod7()[pri:0, instance:autoLessons.ParallelTest2@4fb0f2b9]" started-at="2023-11-18T10:01:21 PST" name="testMethod7" finished-at="2023-11-18T10:01:21 PST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMethod7 -->
-        <test-method signature="testMethod8()[pri:0, instance:autoLessons.ParallelTest2@4fb0f2b9]" started-at="2023-11-18T10:01:21 PST" name="testMethod8" finished-at="2023-11-18T10:01:21 PST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMethod8 -->
-      </class> <!-- autoLessons.ParallelTest2 -->
-    </test> <!-- ParallelTest2 -->
-    <test started-at="2023-11-18T10:01:21 PST" name="ParallelTest3" finished-at="2023-11-18T10:01:21 PST" duration-ms="8">
-      <class name="autoLessons.ParallelTest3">
-        <test-method signature="testMethod99()[pri:0, instance:autoLessons.ParallelTest3@4cc451f2]" started-at="2023-11-18T10:01:21 PST" name="testMethod99" finished-at="2023-11-18T10:01:21 PST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMethod99 -->
-        <test-method signature="testMethod9()[pri:0, instance:autoLessons.ParallelTest3@4cc451f2]" started-at="2023-11-18T10:01:21 PST" name="testMethod9" finished-at="2023-11-18T10:01:21 PST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMethod9 -->
-        <test-method signature="testMethod999()[pri:0, instance:autoLessons.ParallelTest3@4cc451f2]" started-at="2023-11-18T10:01:21 PST" name="testMethod999" finished-at="2023-11-18T10:01:21 PST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMethod999 -->
-        <test-method signature="testMethod9999()[pri:0, instance:autoLessons.ParallelTest3@4cc451f2]" started-at="2023-11-18T10:01:21 PST" name="testMethod9999" finished-at="2023-11-18T10:01:21 PST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMethod9999 -->
-      </class> <!-- autoLessons.ParallelTest3 -->
-    </test> <!-- ParallelTest3 -->
+      </class> <!-- listeners.TestClass -->
+    </test> <!-- Test2 -->
   </suite> <!-- Suite -->
 </testng-results>

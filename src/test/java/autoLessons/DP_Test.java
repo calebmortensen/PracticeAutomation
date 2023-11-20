@@ -1,7 +1,7 @@
 package autoLessons;
 
+import org.testng.annotations.Test;
 import java.time.Duration;
-
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
@@ -27,9 +27,11 @@ public class DP_Test {
 	// public static boolean checked;
 	public static SoftAssert softAssert;
 
-	@Test(dataProvider = "loginTestData", timeOut = 40000, expectedExceptions = {NoSuchElementException.class}) // can use method name if dp not named
-	//(dataProvider = "loginData", dataProviderClass = autoLessons.ExcelDataSupplier.class) //asserting an exception																							// dataprovider isn't
-																	
+	@Test(dataProvider = "loginTestData", timeOut = 15000, invocationCount = 2) // can use method name if dp not named
+	// (dataProvider = "loginData", dataProviderClass =
+	// autoLessons.ExcelDataSupplier.class) //asserting an exception // dataprovider
+	// isn't
+	// , expectedExceptions = {NoSuchElementException.class} //Negative Testing
 	public void LoginTest(String userName, String password) throws Exception {
 
 		WebDriverManager.chromedriver().setup();
@@ -49,17 +51,23 @@ public class DP_Test {
 		element.click();
 		element = wait
 				.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h6[normalize-space()='Dashboard']")));
-		//element.findElement(By.id("abcd")).click(); //expectedExceptions = {NoSuchElementException.class} //NEGATIVE TESTING
+		// element.findElement(By.id("abcd")).click(); //expectedExceptions =
+		// {NoSuchElementException.class} //NEGATIVE TESTING
 		driver.quit();
 		// softAssert.assertAll();
 
 	}
 
-	@DataProvider(name = "loginTestData", parallel = true ) //parallel = true + also in XML add: data-provider-thread-count="3"
-	public Object[][] loginData() {                         //
+	@DataProvider(name = "loginTestData") // parallel = true + also in XML add:
+															// data-provider-thread-count="3"
+	public Object[][] loginData() {
 		Object[][] data = new Object[1][2]; // 2 Dimensional Array (username & password)
 		data[0][0] = "Admin";
 		data[0][1] = "admin123";
+
+		/*
+		 * data[1][0] = "Invalid_User"; data[1][1] = "Invalid_PW";
+		 */
 
 		/*
 		 * data[1][0] = "Admin"; data[1][1] = "admin1234";

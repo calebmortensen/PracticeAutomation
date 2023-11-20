@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,12 +50,12 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>ParallelTest.xml</span>
+                    <span>testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-Suite" class="navigator-link ">
-                    <span class="test-stats">4 tests</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,40 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">24 methods,   24 passed</span>
+                    <span class="method-stats">4 methods, 2 failed,  1 skipped,  1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="listeners.TestClass" class="method navigator-link" hash-for-method="testMethod2">testMethod2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="listeners.TestClass" class="method navigator-link" hash-for-method="testMethod3">testMethod3</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="listeners.TestClass" class="method navigator-link" hash-for-method="testMethod4">testMethod4</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,122 +136,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="autoLessons.ParallelTest" class="method navigator-link" hash-for-method="testMethod1">testMethod1</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="autoLessons.ParallelTest" class="method navigator-link" hash-for-method="testMethod1">testMethod1</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="autoLessons.ParallelTest" class="method navigator-link" hash-for-method="testMethod2">testMethod2</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="autoLessons.ParallelTest" class="method navigator-link" hash-for-method="testMethod2">testMethod2</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="autoLessons.ParallelTest" class="method navigator-link" hash-for-method="testMethod3">testMethod3</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="autoLessons.ParallelTest" class="method navigator-link" hash-for-method="testMethod3">testMethod3</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="autoLessons.ParallelTest" class="method navigator-link" hash-for-method="testMethod4">testMethod4</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="autoLessons.ParallelTest" class="method navigator-link" hash-for-method="testMethod4">testMethod4</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="autoLessons.ParallelTest2" class="method navigator-link" hash-for-method="testMethod5">testMethod5</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="autoLessons.ParallelTest2" class="method navigator-link" hash-for-method="testMethod5">testMethod5</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="autoLessons.ParallelTest2" class="method navigator-link" hash-for-method="testMethod6">testMethod6</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="autoLessons.ParallelTest2" class="method navigator-link" hash-for-method="testMethod6">testMethod6</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="autoLessons.ParallelTest2" class="method navigator-link" hash-for-method="testMethod7">testMethod7</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="autoLessons.ParallelTest2" class="method navigator-link" hash-for-method="testMethod7">testMethod7</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="autoLessons.ParallelTest2" class="method navigator-link" hash-for-method="testMethod8">testMethod8</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="autoLessons.ParallelTest2" class="method navigator-link" hash-for-method="testMethod8">testMethod8</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="autoLessons.ParallelTest3" class="method navigator-link" hash-for-method="testMethod9">testMethod9</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="autoLessons.ParallelTest3" class="method navigator-link" hash-for-method="testMethod9">testMethod9</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="autoLessons.ParallelTest3" class="method navigator-link" hash-for-method="testMethod99">testMethod99</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="autoLessons.ParallelTest3" class="method navigator-link" hash-for-method="testMethod99">testMethod99</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="autoLessons.ParallelTest3" class="method navigator-link" hash-for-method="testMethod999">testMethod999</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="autoLessons.ParallelTest3" class="method navigator-link" hash-for-method="testMethod999">testMethod999</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="autoLessons.ParallelTest3" class="method navigator-link" hash-for-method="testMethod9999">testMethod9999</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="autoLessons.ParallelTest3" class="method navigator-link" hash-for-method="testMethod9999">testMethod9999</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="listeners.TestClass" class="method navigator-link" hash-for-method="testMethod1">testMethod1</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -233,38 +151,22 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">autoLessons.ParallelTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">listeners.TestClass</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testMethod1">
-                  </a> <!-- testMethod1 -->
-                  <span class="method-name">testMethod1</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testMethod1">
-                  </a> <!-- testMethod1 -->
-                  <span class="method-name">testMethod1</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="testMethod2">
                   </a> <!-- testMethod2 -->
                   <span class="method-name">testMethod2</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testMethod2">
-                  </a> <!-- testMethod2 -->
-                  <span class="method-name">testMethod2</span>
+                  <div class="stack-trace">java.lang.AssertionError: 
+	at listeners.TestClass.testMethod2(TestClass.java:23)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -272,155 +174,51 @@
                   <a name="testMethod3">
                   </a> <!-- testMethod3 -->
                   <span class="method-name">testMethod3</span>
+                  <div class="stack-trace">org.testng.internal.thread.ThreadTimeoutException: Method listeners.TestClass.testMethod3() didn&apos;t finish within the time-out 1000
+	at java.base/java.lang.Thread.sleep0(Native Method)
+	at java.base/java.lang.Thread.sleep(Thread.java:484)
+	at listeners.TestClass.testMethod3(TestClass.java:28)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 6 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testMethod3">
-                  </a> <!-- testMethod3 -->
-                  <span class="method-name">testMethod3</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">listeners.TestClass</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
                   <a name="testMethod4">
                   </a> <!-- testMethod4 -->
                   <span class="method-name">testMethod4</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testMethod4">
-                  </a> <!-- testMethod4 -->
-                  <span class="method-name">testMethod4</span>
+                  <div class="stack-trace">java.lang.Throwable: Method listeners.TestClass.testMethod4() on instance listeners.TestClass@9f116cc depends on not successfully finished methods 
+[listeners.TestClass.testMethod3() on instance listeners.TestClass@9f116cc]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
+          </div> <!-- suite-Suite-class-skipped -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">autoLessons.ParallelTest3</span>
+              <span class="class-name">listeners.TestClass</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testMethod9">
-                  </a> <!-- testMethod9 -->
-                  <span class="method-name">testMethod9</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testMethod9">
-                  </a> <!-- testMethod9 -->
-                  <span class="method-name">testMethod9</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testMethod99">
-                  </a> <!-- testMethod99 -->
-                  <span class="method-name">testMethod99</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testMethod99">
-                  </a> <!-- testMethod99 -->
-                  <span class="method-name">testMethod99</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testMethod999">
-                  </a> <!-- testMethod999 -->
-                  <span class="method-name">testMethod999</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testMethod999">
-                  </a> <!-- testMethod999 -->
-                  <span class="method-name">testMethod999</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testMethod9999">
-                  </a> <!-- testMethod9999 -->
-                  <span class="method-name">testMethod9999</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testMethod9999">
-                  </a> <!-- testMethod9999 -->
-                  <span class="method-name">testMethod9999</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">autoLessons.ParallelTest2</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testMethod5">
-                  </a> <!-- testMethod5 -->
-                  <span class="method-name">testMethod5</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testMethod5">
-                  </a> <!-- testMethod5 -->
-                  <span class="method-name">testMethod5</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testMethod6">
-                  </a> <!-- testMethod6 -->
-                  <span class="method-name">testMethod6</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testMethod6">
-                  </a> <!-- testMethod6 -->
-                  <span class="method-name">testMethod6</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testMethod7">
-                  </a> <!-- testMethod7 -->
-                  <span class="method-name">testMethod7</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testMethod7">
-                  </a> <!-- testMethod7 -->
-                  <span class="method-name">testMethod7</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testMethod8">
-                  </a> <!-- testMethod8 -->
-                  <span class="method-name">testMethod8</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testMethod8">
-                  </a> <!-- testMethod8 -->
-                  <span class="method-name">testMethod8</span>
+                  <a name="testMethod1">
+                  </a> <!-- testMethod1 -->
+                  <span class="method-name">testMethod1</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -428,35 +226,36 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/home/caleb/eclipse-workspace/PracticeAutomation/src/test/java/autoLessons/ParallelTest.xml</span>
+            <span class="header-content">/home/caleb/eclipse-workspace/PracticeAutomation/src/test/java/listeners/testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;2&quot; parallel=&quot;methods&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;2&quot; parallel=&quot;methods&quot; name=&quot;All&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;listeners.ITestListenerClass&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test1&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;autoLessons.ParallelTest&quot;/&gt;
-      &lt;class name=&quot;autoLessons.ParallelTest2&quot;/&gt;
-      &lt;class name=&quot;autoLessons.ParallelTest3&quot;/&gt;
+      &lt;class name=&quot;listeners.TestClass&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;testMethod1&quot;/&gt;
+          &lt;include name=&quot;testMethod2&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- listeners.TestClass --&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- All --&gt;
-  &lt;test thread-count=&quot;2&quot; parallel=&quot;methods&quot; name=&quot;ParallelTest&quot;&gt;
+  &lt;/test&gt; &lt;!-- Test1 --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;autoLessons.ParallelTest&quot;/&gt;
+      &lt;class name=&quot;listeners.TestClass&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;testMethod3&quot;/&gt;
+          &lt;include name=&quot;testMethod4&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- listeners.TestClass --&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- ParallelTest --&gt;
-  &lt;test thread-count=&quot;2&quot; parallel=&quot;methods&quot; name=&quot;ParallelTest2&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;autoLessons.ParallelTest2&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- ParallelTest2 --&gt;
-  &lt;test thread-count=&quot;2&quot; parallel=&quot;methods&quot; name=&quot;ParallelTest3&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;autoLessons.ParallelTest3&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- ParallelTest3 --&gt;
+  &lt;/test&gt; &lt;!-- Test2 --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -468,16 +267,10 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">All (3 classes)</span>
+                <span class="test-name">Test1 (1 class)</span>
               </li>
               <li>
-                <span class="test-name">ParallelTest (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">ParallelTest2 (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">ParallelTest3 (1 class)</span>
+                <span class="test-name">Test2 (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -503,108 +296,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(24);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testMethod1')
-data.setCell(0, 2, 'autoLessons.ParallelTest')
-data.setCell(0, 3, 11);
+data.setCell(0, 1, 'testMethod3')
+data.setCell(0, 2, 'listeners.TestClass')
+data.setCell(0, 3, 1006);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testMethod2')
-data.setCell(1, 2, 'autoLessons.ParallelTest')
-data.setCell(1, 3, 11);
+data.setCell(1, 1, 'testMethod1')
+data.setCell(1, 2, 'listeners.TestClass')
+data.setCell(1, 3, 12);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testMethod4')
-data.setCell(2, 2, 'autoLessons.ParallelTest')
-data.setCell(2, 3, 3);
+data.setCell(2, 1, 'testMethod2')
+data.setCell(2, 2, 'listeners.TestClass')
+data.setCell(2, 3, 2);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testMethod3')
-data.setCell(3, 2, 'autoLessons.ParallelTest')
-data.setCell(3, 3, 2);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testMethod9')
-data.setCell(4, 2, 'autoLessons.ParallelTest3')
-data.setCell(4, 3, 2);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'testMethod6')
-data.setCell(5, 2, 'autoLessons.ParallelTest2')
-data.setCell(5, 3, 2);
-data.setCell(6, 0, 6)
-data.setCell(6, 1, 'testMethod1')
-data.setCell(6, 2, 'autoLessons.ParallelTest')
-data.setCell(6, 3, 2);
-data.setCell(7, 0, 7)
-data.setCell(7, 1, 'testMethod3')
-data.setCell(7, 2, 'autoLessons.ParallelTest')
-data.setCell(7, 3, 2);
-data.setCell(8, 0, 8)
-data.setCell(8, 1, 'testMethod9')
-data.setCell(8, 2, 'autoLessons.ParallelTest3')
-data.setCell(8, 3, 2);
-data.setCell(9, 0, 9)
-data.setCell(9, 1, 'testMethod9999')
-data.setCell(9, 2, 'autoLessons.ParallelTest3')
-data.setCell(9, 3, 1);
-data.setCell(10, 0, 10)
-data.setCell(10, 1, 'testMethod7')
-data.setCell(10, 2, 'autoLessons.ParallelTest2')
-data.setCell(10, 3, 1);
-data.setCell(11, 0, 11)
-data.setCell(11, 1, 'testMethod5')
-data.setCell(11, 2, 'autoLessons.ParallelTest2')
-data.setCell(11, 3, 1);
-data.setCell(12, 0, 12)
-data.setCell(12, 1, 'testMethod99')
-data.setCell(12, 2, 'autoLessons.ParallelTest3')
-data.setCell(12, 3, 1);
-data.setCell(13, 0, 13)
-data.setCell(13, 1, 'testMethod8')
-data.setCell(13, 2, 'autoLessons.ParallelTest2')
-data.setCell(13, 3, 1);
-data.setCell(14, 0, 14)
-data.setCell(14, 1, 'testMethod999')
-data.setCell(14, 2, 'autoLessons.ParallelTest3')
-data.setCell(14, 3, 1);
-data.setCell(15, 0, 15)
-data.setCell(15, 1, 'testMethod2')
-data.setCell(15, 2, 'autoLessons.ParallelTest')
-data.setCell(15, 3, 1);
-data.setCell(16, 0, 16)
-data.setCell(16, 1, 'testMethod4')
-data.setCell(16, 2, 'autoLessons.ParallelTest')
-data.setCell(16, 3, 1);
-data.setCell(17, 0, 17)
-data.setCell(17, 1, 'testMethod5')
-data.setCell(17, 2, 'autoLessons.ParallelTest2')
-data.setCell(17, 3, 1);
-data.setCell(18, 0, 18)
-data.setCell(18, 1, 'testMethod6')
-data.setCell(18, 2, 'autoLessons.ParallelTest2')
-data.setCell(18, 3, 1);
-data.setCell(19, 0, 19)
-data.setCell(19, 1, 'testMethod7')
-data.setCell(19, 2, 'autoLessons.ParallelTest2')
-data.setCell(19, 3, 1);
-data.setCell(20, 0, 20)
-data.setCell(20, 1, 'testMethod8')
-data.setCell(20, 2, 'autoLessons.ParallelTest2')
-data.setCell(20, 3, 1);
-data.setCell(21, 0, 21)
-data.setCell(21, 1, 'testMethod99')
-data.setCell(21, 2, 'autoLessons.ParallelTest3')
-data.setCell(21, 3, 1);
-data.setCell(22, 0, 22)
-data.setCell(22, 1, 'testMethod9999')
-data.setCell(22, 2, 'autoLessons.ParallelTest3')
-data.setCell(22, 3, 1);
-data.setCell(23, 0, 23)
-data.setCell(23, 1, 'testMethod999')
-data.setCell(23, 2, 'autoLessons.ParallelTest3')
-data.setCell(23, 3, 1);
+data.setCell(3, 1, 'testMethod4')
+data.setCell(3, 2, 'listeners.TestClass')
+data.setCell(3, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 52 ms</span>
+              <span class="suite-total-time">Total running time: 1 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -619,9 +332,22 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">4 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">listeners.TestClass</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">testMethod2</span>
+                <br/>
+                <span class="ignored-method-name">testMethod1</span>
+                <br/>
+                <span class="ignored-method-name">testMethod4</span>
+                <br/>
+                <span class="ignored-method-name">testMethod3</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -630,117 +356,22 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">autoLessons.ParallelTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">listeners.TestClass</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">testMethod1</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">testMethod2</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testMethod3</span>
                 <span class="method-start">15 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">testMethod4</span>
-                <span class="method-start">15 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">autoLessons.ParallelTest2</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">testMethod5</span>
-                <span class="method-start">19 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testMethod6</span>
-                <span class="method-start">20 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testMethod7</span>
-                <span class="method-start">22 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testMethod8</span>
-                <span class="method-start">24 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">autoLessons.ParallelTest3</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">testMethod9</span>
-                <span class="method-start">24 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testMethod99</span>
-                <span class="method-start">26 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testMethod999</span>
-                <span class="method-start">27 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testMethod9999</span>
-                <span class="method-start">29 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">autoLessons.ParallelTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">testMethod2</span>
-                <span class="method-start">98 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testMethod1</span>
-                <span class="method-start">98 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">testMethod3</span>
-                <span class="method-start">102 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testMethod4</span>
-                <span class="method-start">103 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">autoLessons.ParallelTest2</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">testMethod5</span>
-                <span class="method-start">111 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testMethod6</span>
-                <span class="method-start">112 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testMethod7</span>
-                <span class="method-start">114 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testMethod8</span>
-                <span class="method-start">115 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">autoLessons.ParallelTest3</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">testMethod99</span>
-                <span class="method-start">123 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testMethod9</span>
-                <span class="method-start">123 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testMethod999</span>
-                <span class="method-start">126 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testMethod9999</span>
-                <span class="method-start">127 ms</span>
+                <span class="method-start">90 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
