@@ -35,6 +35,28 @@
 			<artifactId>poi</artifactId>
 			<version>5.2.4</version>
 		</dependency>
+		<dependency>
+			<groupId>com.aventstack</groupId>
+			<artifactId>extentreports</artifactId>
+			<version>5.1.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.spark</groupId>
+			<artifactId>spark-core_2.13</artifactId>
+			<version>3.5.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-firefox-driver</artifactId>
+			<version>4.15.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-edge-driver</artifactId>
+			<version>4.15.0</version>
+		</dependency>
 
 
 	</dependencies>

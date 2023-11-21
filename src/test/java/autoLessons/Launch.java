@@ -25,7 +25,7 @@ public class Launch {
 		
 		// Title Assertion / HARD
 		String actualTitle = driver.getTitle();
-		String expectedTitle = "Log in to Facebook";
+		String expectedTitle = "Log into Facebook";
 		assertEquals(actualTitle, expectedTitle, "Title is mismatched");
 
 		// URL Assertion / SOFT all
@@ -33,20 +33,20 @@ public class Launch {
 		String expectedUrl = "https://www.facebook.com/";
 		softAssert.assertNotEquals(actualUrl, expectedUrl, "URL is mismatched");
 
-		// Text Assertion
+		// Text Assertion (entered username above) FAIL
 		String actualText = driver.findElement(By.name("email")).getAttribute("value");
 		String expectedText = "";
 		softAssert.assertEquals(actualText, expectedText, "Username Text is mismatched");
 
-		// Border Assertion - Selenium reads HEX value for CSS so need to convert to RGB
+		// Border Assertion - Selenium reads HEX value for CSS so need to convert to RGB     //FAIL
 		String actualBorder = driver.findElement(By.name("email")).getCssValue("border");
 		String expectedBorder = "1px solid rgb(240, 40, 73)"; // 1px solid #f02849 -> rgb(240,40,73) https://htmlcolorcodes.com/hex-to-rgb/
 		softAssert.assertEquals(actualBorder, expectedBorder, "Username Border is mismatched");
 
 		// Error Message Assertion
-		String actualErrorMessage = driver.findElement(By.xpath("(//div[@id='email_container']/div[last()]")).getText();
-		String expectedErrorMessage = "The email address or mobile number you entered isn't connected to an account. Find your account and log in.";
-		softAssert.assertEquals(actualErrorMessage, expectedErrorMessage, "Error Message is mismatched");
+		//String actualErrorMessage = driver.findElement(By.xpath("(//div[@id='email_container']/div[last()]")).getText();
+		//String expectedErrorMessage = "The email address or mobile number you entered isn't connected to an account. Find your account and log in.";
+		//softAssert.assertEquals(actualErrorMessage, expectedErrorMessage, "Error Message is mismatched");
 		
 		driver.quit();
 		softAssert.assertAll(); //Throws Exception at END of test

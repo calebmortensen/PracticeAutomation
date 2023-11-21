@@ -6,6 +6,7 @@
 	</listeners>-->
 	
   <test thread-count="5" name="Screenshot_Test">
+	  <parameter name="browserName" value="Chrome"></parameter>
     <classes>
       <class name="screenshots.Screenshot_Test">
       <methods>
@@ -16,6 +17,7 @@
   </test> 
   
   <test thread-count="5" name="Screenshot_Test_1">
+	  <parameter name="browserName" value="Firefox"></parameter>
     <classes>
       <class name="screenshots.Screenshot_Test">
       <methods>

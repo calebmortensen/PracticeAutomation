@@ -12,11 +12,16 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 import org.testng.asserts.SoftAssert;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -29,11 +34,26 @@ public class Base_Setup {
 	public static SoftAssert softAssert;
 	public static String screenshotsSubFolderName;
 
+	@Parameters("browserName")
 	@BeforeTest
-	public void setup() {
-		WebDriverManager.chromedriver().setup();
-		driver = new ChromeDriver();
-		wait = new WebDriverWait(driver, Duration.ofSeconds(3));
+	public void InitializeBrowser(ITestContext context, @Optional("chrome") String browserName ) {
+		switch(browserName.toLowerCase()) {
+		case "chrome":
+			WebDriverManager.chromedriver().setup();
+			driver = new ChromeDriver();
+			break;
+		case "edge":
+			WebDriverManager.edgedriver().setup();
+			driver = new EdgeDriver();
+			break;
+		case "firefox":
+			WebDriverManager.firefoxdriver().setup();
+			driver = new FirefoxDriver();
+			break;
+		default:
+			System.out.println("Browsername is invalid");
+			break;
+		}
 		driver.manage().window().maximize();
 	}
 
@@ -53,7 +73,7 @@ public class Base_Setup {
 	public void captureScreenshot(String fileName) {
 		if(screenshotsSubFolderName == null) {
 			LocalDateTime myDateObj = LocalDateTime.now();
-		    DateTimeFormatter myFormatObj = DateTimeFormatter.ofPattern("ddMMyyyyHHmmss");
+		    DateTimeFormatter myFormatObj = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
 		    screenshotsSubFolderName = myDateObj.format(myFormatObj);
 		   
 		}

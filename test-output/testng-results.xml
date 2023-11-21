@@ -1,13 +1,124 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-20T14:30:09 PST" name="Default suite" finished-at="2023-11-20T14:30:30 PST" duration-ms="21011">
+  <suite started-at="2023-11-21T11:04:39 PST" name="Suite" finished-at="2023-11-21T11:05:02 PST" duration-ms="23008">
     <groups>
+      <group name="regression">
+        <method signature="Launch.OrangeHRMLoginTest(java.lang.String,java.lang.String)[pri:0, instance:extentReports.Launch@510f3d34]" name="OrangeHRMLoginTest" class="extentReports.Launch"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="Launch.LaunchFacebook()[pri:0, instance:extentReports.Launch@1f2586d6]" name="LaunchFacebook" class="extentReports.Launch"/>
+        <method signature="Launch.OrangeHRMLoginTest(java.lang.String,java.lang.String)[pri:0, instance:extentReports.Launch@510f3d34]" name="OrangeHRMLoginTest" class="extentReports.Launch"/>
+      </group> <!-- smoke -->
+      <group name="sanity">
+        <method signature="Launch.OrangeHRMLoginTest(java.lang.String,java.lang.String)[pri:0, instance:extentReports.Launch@510f3d34]" name="OrangeHRMLoginTest" class="extentReports.Launch"/>
+      </group> <!-- sanity -->
     </groups>
-    <test started-at="2023-11-20T14:30:09 PST" name="Default test" finished-at="2023-11-20T14:30:30 PST" duration-ms="21011">
-      <class name="autoLessons.DP_Test">
-        <test-method signature="LoginTest(java.lang.String,java.lang.String)[pri:0, instance:autoLessons.DP_Test@c33b74f]" started-at="2023-11-20T14:30:09 PST" name="LoginTest" data-provider="loginTestData" finished-at="2023-11-20T14:30:24 PST" duration-ms="15012" status="FAIL">
+    <test started-at="2023-11-21T11:04:39 PST" name="Facebook" finished-at="2023-11-21T11:04:52 PST" duration-ms="12662">
+      <class name="extentReports.Launch">
+        <test-method is-config="true" signature="InitializeBrowser(org.testng.ITestContext,java.lang.String)[pri:0, instance:extentReports.Launch@1f2586d6]" started-at="2023-11-21T11:04:39 PST" name="InitializeBrowser" finished-at="2023-11-21T11:04:41 PST" duration-ms="1809" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@28ee0a3c]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitializeBrowser -->
+        <test-method signature="LaunchFacebook()[pri:0, instance:extentReports.Launch@1f2586d6]" started-at="2023-11-21T11:04:41 PST" name="LaunchFacebook" finished-at="2023-11-21T11:04:51 PST" duration-ms="10557" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Log into Facebook expected:<Log into Facebook> but was:<Title is mismatched>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Log into Facebook expected:<Log into Facebook> but was:<Title is mismatched>
+at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:115)
+at extentReports.Launch.LaunchFacebook(Launch.java:33)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchFacebook -->
+        <test-method is-config="true" signature="checkStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:extentReports.Launch@1f2586d6]" started-at="2023-11-21T11:04:51 PST" name="checkStatus" finished-at="2023-11-21T11:04:51 PST" duration-ms="183" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void extentReports.Launch.LaunchFacebook() throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=LaunchFacebook status=FAILURE method=Launch.LaunchFacebook()[pri:0, instance:extentReports.Launch@1f2586d6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatus -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:extentReports.Launch@1f2586d6]" started-at="2023-11-21T11:04:51 PST" name="teardown" finished-at="2023-11-21T11:04:52 PST" duration-ms="82" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- extentReports.Launch -->
+    </test> <!-- Facebook -->
+    <test started-at="2023-11-21T11:04:52 PST" name="OrangeHRM_FireFox" finished-at="2023-11-21T11:05:02 PST" duration-ms="10332">
+      <class name="extentReports.Launch">
+        <test-method is-config="true" signature="initialiseExtentReports()[pri:0, instance:extentReports.Launch@510f3d34]" started-at="2023-11-21T11:04:38 PST" name="initialiseExtentReports" finished-at="2023-11-21T11:04:39 PST" duration-ms="492" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseExtentReports -->
+        <test-method is-config="true" signature="InitializeBrowser(org.testng.ITestContext,java.lang.String)[pri:0, instance:extentReports.Launch@510f3d34]" started-at="2023-11-21T11:04:52 PST" name="InitializeBrowser" finished-at="2023-11-21T11:04:54 PST" duration-ms="2497" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2dd1086]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitializeBrowser -->
+        <test-method signature="OrangeHRMLoginTest(java.lang.String,java.lang.String)[pri:0, instance:extentReports.Launch@510f3d34]" started-at="2023-11-21T11:04:54 PST" name="OrangeHRMLoginTest" data-provider="loginTestData" finished-at="2023-11-21T11:05:02 PST" duration-ms="7820" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -20,101 +131,34 @@
               </value>
             </param>
           </params>
-          <exception class="org.testng.internal.thread.ThreadTimeoutException">
-            <message>
-              <![CDATA[Method autoLessons.DP_Test.LoginTest() didn't finish within the time-out 15000]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.internal.thread.ThreadTimeoutException: Method autoLessons.DP_Test.LoginTest() didn't finish within the time-out 15000
-at java.base/java.lang.Thread.sleep0(Native Method)
-at java.base/java.lang.Thread.sleep(Thread.java:484)
-at org.openqa.selenium.support.ui.Sleeper.lambda$static$0(Sleeper.java:25)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:233)
-at autoLessons.DP_Test.LoginTest(DP_Test.java:42)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:47)
-at org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:76)
-at org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:11)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1623)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.internal.thread.ThreadTimeoutException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LoginTest -->
-        <test-method signature="LoginTest(java.lang.String,java.lang.String)[pri:0, instance:autoLessons.DP_Test@c33b74f]" started-at="2023-11-20T14:30:24 PST" name="LoginTest" data-provider="loginTestData" finished-at="2023-11-20T14:30:30 PST" duration-ms="5952" status="FAIL">
+        </test-method> <!-- OrangeHRMLoginTest -->
+        <test-method is-config="true" signature="checkStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:extentReports.Launch@510f3d34]" started-at="2023-11-21T11:05:02 PST" name="checkStatus" finished-at="2023-11-21T11:05:02 PST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Admin]]>
+                <![CDATA[public void extentReports.Launch.OrangeHRMLoginTest(java.lang.String,java.lang.String) throws java.lang.Exception]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[admin123]]>
+                <![CDATA[[TestResult name=OrangeHRMLoginTest status=SUCCESS method=Launch.OrangeHRMLoginTest(java.lang.String,java.lang.String)[pri:0, instance:extentReports.Launch@510f3d34] output={null}]]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for element to be clickable: By.xpath: //input[@placeholder='Username'] (tried for 3 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //input[@placeholder='Username'] (tried for 3 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
-at autoLessons.DP_Test.LoginTest(DP_Test.java:42)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:47)
-at org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:76)
-at org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:11)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1623)
-Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=119.0.6045.159)
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.2.0-36-generic', java.version: '20.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3101e606538c93421b87fe5b133f7a9a, findElement {using=xpath, value=//input[@placeholder='Username']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.159, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:38379}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:38379/devtoo..., se:cdpVersion: 119.0.6045.159, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3101e606538c93421b87fe5b133f7a9a
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:190)
-at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:627)
-at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:624)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
-... 11 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LoginTest -->
-      </class> <!-- autoLessons.DP_Test -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- checkStatus -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:extentReports.Launch@510f3d34]" started-at="2023-11-21T11:05:02 PST" name="teardown" finished-at="2023-11-21T11:05:02 PST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="generateExtentReports()[pri:0, instance:extentReports.Launch@510f3d34]" started-at="2023-11-21T11:05:02 PST" name="generateExtentReports" finished-at="2023-11-21T11:05:02 PST" duration-ms="368" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateExtentReports -->
+      </class> <!-- extentReports.Launch -->
+    </test> <!-- OrangeHRM_FireFox -->
+  </suite> <!-- Suite -->
 </testng-results>

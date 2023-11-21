@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,8 +38,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-failed">Default suite</span>
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,37 +49,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>testng-customsuite.xml</span>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
-                    <span class="test-stats">1 test</span>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
-                    <span>0 groups</span>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>3 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -92,26 +92,35 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 2 failed,   </span>
+                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
                     <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
                     </span>
-                    <div class="method-list-content failed suite-Default_suite">
+                    <div class="method-list-content failed suite-Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="autoLessons.DP_Test" class="method navigator-link" hash-for-method="LoginTest(Admin, admin123)">LoginTest(Admin, admin123)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="extentReports.Launch" class="method navigator-link" hash-for-method="LaunchFacebook">LaunchFacebook</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
                       <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="autoLessons.DP_Test" class="method navigator-link" hash-for-method="LoginTest(Admin, admin123)">LoginTest(Admin, admin123)</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="extentReports.Launch" class="method navigator-link" hash-for-method="OrangeHRMLoginTest(Admin, admin123)">OrangeHRMLoginTest(Admin, admin123)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Default_suite -->
+                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -122,141 +131,138 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-failed">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">autoLessons.DP_Test</span>
+              <span class="class-name">extentReports.Launch</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="LoginTest(Admin, admin123)">
-                  </a> <!-- LoginTest(Admin, admin123) -->
-                  <span class="method-name">LoginTest</span>
-                  <span class="parameters">(Admin,admin123)</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //input[@placeholder=&apos;Username&apos;] (tried for 3 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
-	at autoLessons.DP_Test.LoginTest(DP_Test.java:42)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:47)
-	at org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:76)
-	at org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:11)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1623)
-Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=119.0.6045.159)
-Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
-System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.2.0-36-generic&apos;, java.version: &apos;20.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3101e606538c93421b87fe5b133f7a9a, findElement {using=xpath, value=//input[@placeholder=&apos;Username&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.159, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:38379}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:38379/devtoo..., se:cdpVersion: 119.0.6045.159, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3101e606538c93421b87fe5b133f7a9a
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:190)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:627)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:624)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
-	... 11 more
-
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="LoginTest(Admin, admin123)">
-                  </a> <!-- LoginTest(Admin, admin123) -->
-                  <span class="method-name">LoginTest</span>
-                  <span class="parameters">(Admin,admin123)</span>
-                  <div class="stack-trace">org.testng.internal.thread.ThreadTimeoutException: Method autoLessons.DP_Test.LoginTest() didn&apos;t finish within the time-out 15000
-	at java.base/java.lang.Thread.sleep0(Native Method)
-	at java.base/java.lang.Thread.sleep(Thread.java:484)
-	at org.openqa.selenium.support.ui.Sleeper.lambda$static$0(Sleeper.java:25)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:233)
-	at autoLessons.DP_Test.LoginTest(DP_Test.java:42)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:47)
-	at org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:76)
-	at org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:11)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1623)
-
+                  <a name="LaunchFacebook">
+                  </a> <!-- LaunchFacebook -->
+                  <span class="method-name">LaunchFacebook</span>
+                  <div class="stack-trace">java.lang.AssertionError: Log into Facebook expected:&lt;Log into Facebook&gt; but was:&lt;Title is mismatched&gt;
+	at extentReports.Launch.LaunchFacebook(Launch.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 26 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-failed -->
-        </div> <!-- panel Default_suite -->
-        <div panel-name="test-xml-Default_suite" class="panel">
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">extentReports.Launch</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="OrangeHRMLoginTest(Admin, admin123)">
+                  </a> <!-- OrangeHRMLoginTest(Admin, admin123) -->
+                  <span class="method-name">OrangeHRMLoginTest</span>
+                  <span class="parameters">(Admin,admin123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/tmp/testng-eclipse-412108639/testng-customsuite.xml</span>
+            <span class="header-content">/home/caleb/eclipse-workspace/PracticeAutomation/src/test/java/extentReports/testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Facebook&quot;&gt;
+    &lt;parameter name=&quot;author&quot; value=&quot;Caleb Mortensen&quot;/&gt;
+    &lt;parameter name=&quot;browserName&quot; value=&quot;Chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;autoLessons.DP_Test&quot;/&gt;
+      &lt;class name=&quot;extentReports.Launch&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;LaunchFacebook&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- extentReports.Launch --&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Default test --&gt;
-&lt;/suite&gt; &lt;!-- Default suite --&gt;
+  &lt;/test&gt; &lt;!-- Facebook --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;OrangeHRM_FireFox&quot;&gt;
+    &lt;parameter name=&quot;author&quot; value=&quot;Caleb Mortensen&quot;/&gt;
+    &lt;parameter name=&quot;browserName&quot; value=&quot;Firefox&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;extentReports.Launch&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;OrangeHRMLoginTest&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- extentReports.Launch --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- OrangeHRM_FireFox --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Default_suite" class="panel">
+        <div panel-name="testlist-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Default suite</span>
+            <span class="header-content">Tests for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (1 class)</span>
+                <span class="test-name">Facebook (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">OrangeHRM_FireFox (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Default_suite" class="panel">
+        <div panel-name="group-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Default suite</span>
+            <span class="header-content">Groups for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">regression</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">OrangeHRMLoginTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">sanity</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">OrangeHRMLoginTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">LaunchFacebook</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">OrangeHRMLoginTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Default_suite" class="panel">
+        <div panel-name="times-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Default suite</span>
+            <span class="header-content">Times for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Default_suite');
-function tableData_Default_suite() {
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
@@ -264,56 +270,95 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'LoginTest')
-data.setCell(0, 2, 'autoLessons.DP_Test')
-data.setCell(0, 3, 15012);
+data.setCell(0, 1, 'LaunchFacebook')
+data.setCell(0, 2, 'extentReports.Launch')
+data.setCell(0, 3, 10557);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'LoginTest')
-data.setCell(1, 2, 'autoLessons.DP_Test')
-data.setCell(1, 3, 5952);
-window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+data.setCell(1, 1, 'OrangeHRMLoginTest')
+data.setCell(1, 2, 'extentReports.Launch')
+data.setCell(1, 3, 7820);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 20 seconds</span>
-              <div id="times-div-Default_suite">
-              </div> <!-- times-div-Default_suite -->
+              <span class="suite-total-time">Total running time: 18 seconds</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Default_suite" class="panel">
+        <div panel-name="reporter-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Default suite</span>
+            <span class="header-content">Reporter output for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Default_suite" class="panel">
+        <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">2 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">extentReports.Launch</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">LaunchFacebook</span>
+                <br/>
+                <span class="ignored-method-name">OrangeHRMLoginTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Default_suite" class="panel">
+        <div panel-name="chronological-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">autoLessons.DP_Test</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">LoginTest(Admin, admin123)</span>
+              <div class="chronological-class-name">extentReports.Launch</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">initialiseExtentReports</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- test-method -->
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-test before">
+                <span class="method-name">InitializeBrowser(org.testng.TestRunner@28ee0a3c, Chrome)</span>
+                <span class="method-start">497 ms</span>
+              </div> <!-- configuration-test before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">LoginTest(Admin, admin123)</span>
-                <span class="method-start">15016 ms</span>
+                <span class="method-name">LaunchFacebook</span>
+                <span class="method-start">2327 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">checkStatus(public void extentReports.Launch.LaunchFacebook() throws java.lang.Exception, [TestResult name=Launc...)</span>
+                <span class="method-start">12886 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">13072 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="configuration-test before">
+                <span class="method-name">InitializeBrowser(org.testng.TestRunner@2dd1086, Firefox)</span>
+                <span class="method-start">13169 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">OrangeHRMLoginTest(Admin, admin123)</span>
+                <span class="method-start">15673 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">checkStatus(public void extentReports.Launch.OrangeHRMLoginTest(java.lang.String,java.lang.String) throws java.l...)</span>
+                <span class="method-start">23496 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">23499 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="configuration-suite after">
+                <span class="method-name">generateExtentReports</span>
+                <span class="method-start">23505 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
