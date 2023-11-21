@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary"></span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Nov 21, 2023 11:04:38 AM</span></a>
+<a href="#"><span class="badge badge-primary">Nov 21, 2023 11:46:07 AM</span></a>
 </li>
 </ul>
 </div>
@@ -50,6 +50,11 @@
 <li class="nav-item dropdown" onclick="toggleView('exception-view')">
 <a id="nav-exception" class="dropdown-toggle" href="#">
 <span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
 </a>
 </li>
 <li class="nav-item dropdown" onclick="toggleView('device-view')">
@@ -94,9 +99,15 @@
 </ul>
 </li>
 <li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">smoke</a><a class="dropdown-item" href="#">sanity</a><a class="dropdown-item" href="#">regression</a>
+</ul>
+</li>
+<li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tablet"></i></a>
 <ul id="device-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">chrome119</a><a class="dropdown-item" href="#">firefox120</a>
+<a class="dropdown-item" href="#">chrome119</a><a class="dropdown-item" href="#">firefox120</a><a class="dropdown-item" href="#">msedge119</a>
 </ul>
 </li>
 </ul>
@@ -104,12 +115,12 @@
       <ul class="test-list-item">
         <li class="test-item"  status="fail" test-id="1"
           author="CalebMortensen"
-          tag=""
+          tag="smoke"
           device="chrome119">
           <div class="test-detail">
             <p class="name">Facebook</p>
             <p class="text-sm">
-              <span>11:04:41 AM</span> / <span>00:00:10:770</span>
+              <span>11:46:09 AM</span> / <span>00:00:11:227</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -118,15 +129,16 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">Facebook</h5>
-<span class='badge badge-success'>11.21.2023 11:04:41 AM</span>
-<span class='badge badge-danger'>11.21.2023 11:04:51 AM</span>
-<span class='badge badge-default'>00:00:10:770</span>
+<span class='badge badge-success'>11.21.2023 11:46:09 AM</span>
+<span class='badge badge-danger'>11.21.2023 11:46:20 AM</span>
+<span class='badge badge-default'>00:00:11:227</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
 <div class="m-t-15"><span class="badge badge-pill badge-default">CalebMortensen</span>
+<span class="badge badge-pill badge-default">smoke</span>
 <span class="badge badge-pill badge-default">chrome119</span></div>
 </div>
 </div>    <div class="row mb-3"><div class="col-md-3">
@@ -139,21 +151,21 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>11:04:41 AM</td>
+        <td>11:46:10 AM</td>
         <td>
           Navigated to Url
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>11:04:42 AM</td>
+        <td>11:46:10 AM</td>
         <td>
           Entered text in Email field
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>11:04:51 AM</td>
+        <td>11:46:20 AM</td>
         <td>
           <textarea readonly class="code-block">java.lang.AssertionError: Log into Facebook expected:<Log into Facebook> but was:<Title is mismatched>
 	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:115)
@@ -195,12 +207,12 @@
         </li>
         <li class="test-item"  status="pass" test-id="2"
           author="CalebMortensen"
-          tag=""
+          tag="regression smoke sanity"
           device="firefox120">
           <div class="test-detail">
             <p class="name">OrangeHRM_FireFox</p>
             <p class="text-sm">
-              <span>11:04:54 AM</span> / <span>00:00:07:834</span>
+              <span>11:46:23 AM</span> / <span>00:00:07:675</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -209,15 +221,18 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">OrangeHRM_FireFox</h5>
-<span class='badge badge-success'>11.21.2023 11:04:54 AM</span>
-<span class='badge badge-danger'>11.21.2023 11:05:02 AM</span>
-<span class='badge badge-default'>00:00:07:834</span>
+<span class='badge badge-success'>11.21.2023 11:46:23 AM</span>
+<span class='badge badge-danger'>11.21.2023 11:46:30 AM</span>
+<span class='badge badge-default'>00:00:07:675</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
 <div class="m-t-15"><span class="badge badge-pill badge-default">CalebMortensen</span>
+<span class="badge badge-pill badge-default">regression</span>
+<span class="badge badge-pill badge-default">smoke</span>
+<span class="badge badge-pill badge-default">sanity</span>
 <span class="badge badge-pill badge-default">firefox120</span></div>
 </div>
 </div><div class="detail-body mt-4">
@@ -226,14 +241,67 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>11:04:58 AM</td>
+        <td>11:46:27 AM</td>
         <td>
           Navigated to Url
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>11:05:02 AM</td>
+        <td>11:46:30 AM</td>
+        <td>
+          OrangeHRMLoginTest has Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="3"
+          author="CalebMortensen"
+          tag="regression smoke sanity"
+          device="msedge119">
+          <div class="test-detail">
+            <p class="name">OrangeHRM_Edge</p>
+            <p class="text-sm">
+              <span>11:46:32 AM</span> / <span>00:00:05:463</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">OrangeHRM_Edge</h5>
+<span class='badge badge-success'>11.21.2023 11:46:32 AM</span>
+<span class='badge badge-danger'>11.21.2023 11:46:38 AM</span>
+<span class='badge badge-default'>00:00:05:463</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CalebMortensen</span>
+<span class="badge badge-pill badge-default">regression</span>
+<span class="badge badge-pill badge-default">smoke</span>
+<span class="badge badge-pill badge-default">sanity</span>
+<span class="badge badge-pill badge-default">msedge119</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:35 AM</td>
+        <td>
+          Navigated to Url
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:38 AM</td>
         <td>
           OrangeHRMLoginTest has Passed
         </td>
@@ -284,9 +352,154 @@
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>11:04:41 AM</td>
+<td>11:46:09 AM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='1'>Facebook</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">3</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">smoke</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>smoke</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:46:09 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>Facebook</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:46:23 AM</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>OrangeHRM_FireFox</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:46:32 AM</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>OrangeHRM_Edge</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">sanity</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>sanity</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:46:23 AM</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>OrangeHRM_FireFox</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:46:32 AM</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>OrangeHRM_Edge</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">regression</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>regression</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:46:23 AM</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>OrangeHRM_FireFox</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:46:32 AM</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>OrangeHRM_Edge</a>
 </td>
 </tr>
 </tbody>
@@ -305,7 +518,7 @@
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Device</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">3</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
@@ -333,7 +546,7 @@
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>11:04:41 AM</td>
+<td>11:46:09 AM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='1'>Facebook</a>
 </td>
@@ -366,9 +579,42 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>11:04:54 AM</td>
+<td>11:46:23 AM</td>
 <td>
 <a href="#" class="linked" test-id='2' id='2'>OrangeHRM_FireFox</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">msedge119</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>msedge119</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:46:32 AM</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>OrangeHRM_Edge</a>
 </td>
 </tr>
 </tbody>
@@ -394,16 +640,16 @@
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>1</span>
+<span class='badge log pass-bg'>2</span>
 <span class='badge log badge-danger'>1</span>
 </span>
 <p class="name">CalebMortensen</p>
-<p class="duration text-sm">2 tests</p>
+<p class="duration text-sm">3 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
 <h4>CalebMortensen</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
 <span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -417,16 +663,23 @@
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>11:04:41 AM</td>
+<td>11:46:09 AM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='1'>Facebook</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>11:04:54 AM</td>
+<td>11:46:23 AM</td>
 <td>
 <a href="#" class="linked" test-id='2' id='2'>OrangeHRM_FireFox</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:46:32 AM</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>OrangeHRM_Edge</a>
 </td>
 </tr>
 </tbody>
@@ -446,19 +699,19 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Nov 21, 2023 11:04:38 AM</h3>
+<h3>Nov 21, 2023 11:46:07 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Nov 21, 2023 11:05:02 AM</h3>
+<h3>Nov 21, 2023 11:46:38 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>1</h3>
+<h3>2</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -480,12 +733,12 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='50%'>
-<b>1</b> tests passed
+<div><small data-tooltip='66%'>
+<b>2</b> tests passed
 </small>
 </div>
 <div>
-<small data-tooltip='50%'><b>1</b> tests failed,
+<small data-tooltip='33%'><b>1</b> tests failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -503,10 +756,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='20%'><b>1</b> events passed</small></div>
+<div><small data-tooltip='28%'><b>2</b> events passed</small></div>
 <div>
-<small data-tooltip='20%'><b>1</b> events failed,
-<b data-tooltip='%'>3</b> others
+<small data-tooltip='14%'><b>1</b> events failed,
+<b data-tooltip='%'>4</b> others
 </small>
 </div>
 </div>
@@ -522,7 +775,7 @@
 </div></div>
 <script>
 var timeline = {
-"Facebook":10.77,"OrangeHRM_FireFox":7.834
+"Facebook":11.227,"OrangeHRM_FireFox":7.675,"OrangeHRM_Edge":5.463
 };
 </script>
 <div class="row">
@@ -534,11 +787,44 @@ var timeline = {
 <tbody>
 <tr>
 <td>CalebMortensen</td>
-<td>1</td>
+<td>2</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td>50%</td>
+<td>66.667%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>smoke</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>66.667%</td>
+</tr>
+<tr>
+<td>sanity</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>regression</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
 </tr>
 </tbody>
 </table></div>
@@ -560,6 +846,14 @@ var timeline = {
 </tr>
 <tr>
 <td>firefox120</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>msedge119</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -593,7 +887,7 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 1,
+passParent: 2,
 failParent: 1,
 warningParent: 0,
 skipParent: 0,
@@ -610,11 +904,11 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 1,
+passEvents: 2,
 failEvents: 1,
 warningEvents: 0,
 skipEvents: 0,
-infoEvents: 3
+infoEvents: 4
 };
 </script>        </div>
       </div>

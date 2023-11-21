@@ -26,6 +26,7 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -95,21 +96,21 @@ public class Base_Setup {
 	}
 
 	@AfterMethod
-
 	public void checkStatus(Method m, ITestResult result) { // REFLECTION Method m
 		if (result.getStatus() == ITestResult.FAILURE) {
 			String screenshotPath = null;
 			screenshotPath = captureScreenshot(
 					result.getTestContext().getName() + "_" + result.getMethod().getMethodName() + ".jpg");
-
+			//Link FAILED Screenshot to Report https://www.softwaretestingmaterial.com/screenshots-extent-reports/
 			extentTest.addScreenCaptureFromPath(screenshotPath);
 			extentTest.fail(result.getThrowable());
 		} else if (result.getStatus() == ITestResult.SUCCESS) {
 			extentTest.pass(m.getName() + " has Passed");
 		}
 
-		// extentTest.assignCategory(m.getAnnotation(Test.class).groups()); //can be in
-		// AfterMethod instead
+		 extentTest.assignCategory(m.getAnnotation(Test.class).groups()); 
+		 
+		
 	}
 
 	public String captureScreenshot(String fileName) {
@@ -117,16 +118,13 @@ public class Base_Setup {
 			LocalDateTime myDateObj = LocalDateTime.now();
 			DateTimeFormatter myFormatObj = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
 			screenshotsSubFolderName = myDateObj.format(myFormatObj);
-
 		}
-
 		TakesScreenshot takesScreenshot = (TakesScreenshot) driver;
 		File sourceFile = takesScreenshot.getScreenshotAs(OutputType.FILE);
 		File destFile = new File("./Screenshots/" + screenshotsSubFolderName + "/" + fileName);
 		try {
 			FileUtils.copyFile(sourceFile, destFile);
 		} catch (IOException e) {
-
 			e.printStackTrace();
 		}
 		System.out.println("Screenshot saved successfully");
