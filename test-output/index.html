@@ -191,7 +191,7 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Facebook&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Facebook_Chrome&quot;&gt;
     &lt;parameter name=&quot;author&quot; value=&quot;Caleb Mortensen&quot;/&gt;
     &lt;parameter name=&quot;browserName&quot; value=&quot;Chrome&quot;/&gt;
     &lt;classes&gt;
@@ -201,9 +201,9 @@
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- extentReports.Launch --&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Facebook --&gt;
+  &lt;/test&gt; &lt;!-- Facebook_Chrome --&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;OrangeHRM_FireFox&quot;&gt;
-    &lt;parameter name=&quot;author&quot; value=&quot;Caleb Mortensen&quot;/&gt;
+    &lt;parameter name=&quot;author&quot; value=&quot;Joe Schmoe&quot;/&gt;
     &lt;parameter name=&quot;browserName&quot; value=&quot;Firefox&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;extentReports.Launch&quot;&gt;
@@ -214,7 +214,7 @@
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- OrangeHRM_FireFox --&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;OrangeHRM_Edge&quot;&gt;
-    &lt;parameter name=&quot;author&quot; value=&quot;Caleb Mortensen&quot;/&gt;
+    &lt;parameter name=&quot;author&quot; value=&quot;Larry Barry&quot;/&gt;
     &lt;parameter name=&quot;browserName&quot; value=&quot;Edge&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;extentReports.Launch&quot;&gt;
@@ -235,7 +235,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Facebook (1 class)</span>
+                <span class="test-name">Facebook_Chrome (1 class)</span>
               </li>
               <li>
                 <span class="test-name">OrangeHRM_FireFox (1 class)</span>
@@ -299,20 +299,20 @@ data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'LaunchFacebook')
 data.setCell(0, 2, 'extentReports.Launch')
-data.setCell(0, 3, 11004);
+data.setCell(0, 3, 13016);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'OrangeHRMLoginTest')
 data.setCell(1, 2, 'extentReports.Launch')
-data.setCell(1, 3, 7669);
+data.setCell(1, 3, 7830);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'OrangeHRMLoginTest')
 data.setCell(2, 2, 'extentReports.Launch')
-data.setCell(2, 3, 5456);
+data.setCell(2, 3, 5721);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 24 seconds</span>
+              <span class="suite-total-time">Total running time: 26 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -355,58 +355,58 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
-                <span class="method-name">InitializeBrowser(org.testng.TestRunner@de77146, Chrome)</span>
-                <span class="method-start">542 ms</span>
+                <span class="method-name">InitializeBrowser(org.testng.TestRunner@2e6d76ba, Chrome)</span>
+                <span class="method-start">669 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">LaunchFacebook</span>
-                <span class="method-start">1991 ms</span>
+                <span class="method-start">3163 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">checkStatus(public void extentReports.Launch.LaunchFacebook() throws java.lang.Exception, [TestResult name=Launc...)</span>
-                <span class="method-start">13003 ms</span>
+                <span class="method-start">16188 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">13197 ms</span>
+                <span class="method-start">16387 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-test before">
-                <span class="method-name">InitializeBrowser(org.testng.TestRunner@691567ea, Firefox)</span>
-                <span class="method-start">13289 ms</span>
+                <span class="method-name">InitializeBrowser(org.testng.TestRunner@22a6d75c, Firefox)</span>
+                <span class="method-start">16478 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">OrangeHRMLoginTest(Admin, admin123)</span>
-                <span class="method-start">15813 ms</span>
+                <span class="method-start">20116 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">checkStatus(public void extentReports.Launch.OrangeHRMLoginTest(java.lang.String,java.lang.String) throws java.l...)</span>
-                <span class="method-start">23483 ms</span>
+                <span class="method-start">27950 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">23484 ms</span>
+                <span class="method-start">27953 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-test before">
-                <span class="method-name">InitializeBrowser(org.testng.TestRunner@5cfed0ba, Edge)</span>
-                <span class="method-start">23488 ms</span>
+                <span class="method-name">InitializeBrowser(org.testng.TestRunner@5a9840f3, Edge)</span>
+                <span class="method-start">27960 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">OrangeHRMLoginTest(Admin, admin123)</span>
-                <span class="method-start">25209 ms</span>
+                <span class="method-start">30470 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">checkStatus(public void extentReports.Launch.OrangeHRMLoginTest(java.lang.String,java.lang.String) throws java.l...)</span>
-                <span class="method-start">30667 ms</span>
+                <span class="method-start">36193 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">30668 ms</span>
+                <span class="method-start">36194 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-suite after">
                 <span class="method-name">generateExtentReports</span>
-                <span class="method-start">30672 ms</span>
+                <span class="method-start">36197 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
