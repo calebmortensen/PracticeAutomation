@@ -101,7 +101,7 @@ public class Base_Setup {
 			String screenshotPath = null;
 			screenshotPath = captureScreenshot(
 					result.getTestContext().getName() + "_" + result.getMethod().getMethodName() + ".jpg");
-			//Link FAILED Screenshot to Report https://www.softwaretestingmaterial.com/screenshots-extent-reports/
+			//Link FAILED Screenshot to Report
 			extentTest.addScreenCaptureFromPath(screenshotPath);
 			extentTest.fail(result.getThrowable());
 		} else if (result.getStatus() == ITestResult.SUCCESS) {
