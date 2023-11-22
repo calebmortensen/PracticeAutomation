@@ -67,7 +67,7 @@ public class ER {
 		.fail(MediaEntityBuilder.createScreenCaptureFromPath(path).build())
 		.fail("Fail with image from Folder", MediaEntityBuilder.createScreenCaptureFromPath(path, "google HOMEpage").build());
 		
-		Throwable t = new Throwable("This is a Throwable Exception");
+		Throwable t = new Throwable("This is a Throwable Exception"); //ONLY available at LOG LEVEL
 		extentReports.createTest("Screenshot Test 7", "This is for attaching the screenshot FROM FOLDER at LOG level")
 		.info("This in an info message 7")
 		.fail(t, MediaEntityBuilder.createScreenCaptureFromPath(path).build())
