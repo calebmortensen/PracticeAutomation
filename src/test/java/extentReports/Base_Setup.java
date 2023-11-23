@@ -64,11 +64,15 @@ public class Base_Setup {
 			break;
 		}
 		driver.manage().window().maximize();
+		//BROWSER Info - Capabilities is an Interface so we CANNOT create an Instance to it, but a Reference
 		Capabilities capabilities = ((RemoteWebDriver) driver).getCapabilities();
 		String device = capabilities.getBrowserName() + " "
 				+ capabilities.getBrowserVersion().substring(0, capabilities.getBrowserVersion().indexOf("."));
 		String author = context.getCurrentXmlTest().getParameter("author");
-
+		
+		//SYSTEM Info
+		System.getProperties().list(System.out);
+		
 		extentTest = extentReports.createTest(context.getName());
 		extentTest.assignAuthor(author);
 		extentTest.assignDevice(device);

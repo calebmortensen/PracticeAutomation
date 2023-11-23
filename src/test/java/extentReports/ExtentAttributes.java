@@ -3,17 +3,29 @@ package extentReports;
 import java.awt.Desktop;
 import java.io.File;
 
+import org.openqa.selenium.Capabilities;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
+
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.ExtentSparkReporterConfig;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class ExtentAttributes {
+	
+	static WebDriver driver;
 
 	public static void main(String[] args) throws Exception {
 		ExtentReports extentReports = new ExtentReports();
 		File file = new File("Extent_report.html");
 		ExtentSparkReporter sparkReporter = new ExtentSparkReporter(file);
+		WebDriverManager.chromedriver().setup(); 
+		driver = new ChromeDriver();
+		Capabilities capabilities = ((RemoteWebDriver) driver).getCapabilities();
 		/*
 		 * ExtentSparkReporterConfig config = sparkReporter.config();
 		 * config.setTheme(Theme.DARK); config.setReportName("Report Name");
@@ -22,6 +34,12 @@ public class ExtentAttributes {
 		 * config.setCss(".badge-primary{background-color:@da0b2b}"); config.setJs(
 		 * "document.getElementsByClassName('logo')[0].style.display='none';");
 		 */
+		extentReports.setSystemInfo("OS ", System.getProperty("os.name"));
+		extentReports.setSystemInfo("Java ", System.getProperty("java.version"));
+		extentReports.setSystemInfo("Browser ", capabilities.getBrowserName() + " " + capabilities.getBrowserVersion());
+		extentReports.setSystemInfo("App URL ", "www.hyrtutorials.com");
+		extentReports.setSystemInfo("User Name  ", "John.SmithTest12345.com");
+		extentReports.setSystemInfo("Password  ", "54321");
 		
 		//CONFIG via JSON (Recommended since it's a light-weight file)
 		sparkReporter.loadJSONConfig(new File("./src/test/resources/extent-reports-config.json"));
@@ -62,7 +80,9 @@ public class ExtentAttributes {
 		.fail("FAILED TeSt");
 		
 		extentReports.flush();
+		driver.quit();
 		Desktop.getDesktop().browse(new File("Extent_report.html").toURI());
+		
 	}
 
 }
