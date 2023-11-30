@@ -23,8 +23,11 @@ public class ExtentAttributes {
 	public static void main(String[] args) throws Exception {
 		ExtentReports extentReports = new ExtentReports();
 		File file = new File("Extent_report.html");
+		//You can build multiple individual reports for ex: just Pass, Fail, Skip, Warning, etc
+		//just create another sparkReporter object with status filter
+		//ex:  sparkReporter_failed.filter().statusFilter().as(new Status[] {Status.FAIL}).apply();
 		ExtentSparkReporter sparkReporter = new ExtentSparkReporter(file);
-		//change order views of sparkreporter via ENUM ViewName  (Removed AUTHOR as an Example)
+		//change order views of SparkReporter via ENUM ViewName  (Removed AUTHOR as an Example)
 		sparkReporter.viewConfigurer().viewOrder().as(new ViewName[] {
 				ViewName.DASHBOARD,
 				ViewName.TEST,
@@ -71,7 +74,7 @@ public class ExtentAttributes {
 		.assignAuthor("Caleb")
 		.assignCategory("Smoke")
 		.assignDevice("Chrome 119")
-		.pass("PASSED TeSt");
+		.skip("SKIP TeSt");
 		
 		extentReports
 		.createTest("Test 3", "Test 3 description")
@@ -87,7 +90,7 @@ public class ExtentAttributes {
 		.assignAuthor("PETER", "Sam")
 		.assignDevice("Chrome 119")
 		.assignDevice("Firefox 77")
-		.fail("FAILED TeSt");
+		.warning("WARNING TeSt");
 		
 		extentReports.flush();
 		driver.quit();

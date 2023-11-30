@@ -111,6 +111,7 @@ public class Base_Setup {
 		} else if (result.getStatus() == ITestResult.SUCCESS) {
 			extentTest.pass(m.getName() + " has Passed");
 		}
+		
 
 		 extentTest.assignCategory(m.getAnnotation(Test.class).groups()); 
 		 
